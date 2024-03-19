@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convocatoria Escolar</title>
+  <style>
+    /*menu desplegable*/
+    .menu-container {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    .menu-button {
+        background-color: #0099ff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        width: 200px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        transition: background-color 0.3s ease;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+    .menu-container:hover .dropdown-content {
+        display: block;
+        animation: fadeIn 0.3s ease;
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    /*fin menu desplegable*/
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #284288;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .logo-izquierdo,
+    .logo-derecho {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .logo-izquierdo {
+      left: 20px;
+    }
+
+    .logo-derecho {
+      right: 20px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .convocatoria {
+      margin-bottom: 30px;
+    }
+
+    .convocatoria h2 {
+      margin-bottom: 10px;
+    }
+
+    .convocatoria p {
+      line-height: 1.6;
+    }
+
+    .imagen {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .animated {
+      animation: fadeIn 1s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu-container">
+    <button class="menu-button">Menú</button>
+    <div class="dropdown-content">
+        <a href="Index.html">Inicio</a>
+        <a href="Tabla de Grupos.html">Grupos</a>
+        <a href="uniforme.html">Uniformes</a>
+        <a href="libros.html">Libros</a>
+        <a href="extraordinarios.html">Extraor.</a>         
+        <a href="paraescolar.html">Paraescolar</a>
+        <a href="tabla_maestros.html">Maestros</a>
+        <a href="recuperativo.html">Recuper.</a>
+    </div>
+    </div>
+    </div>
+</div>
+  <header>
+    <img class="logo-izquierdo" src="cobay.png" width="200" alt="Logo Izquierdo">
+    <h1>Convocatoria</h1>
+    <img class="logo-derecho" src="cobay.png" width="200" alt="Logo Derecho">
+  </header>
+
+  <div class="container">
+    <div class="convocatoria animated">
+      <center><h2>PARA INGRESAR AL PRIMER GRADO DE BACHILLERATO
+        CORRESPONDIENTE AL CICLO ESCOLAR 2024 - 2025</h2></center>
+      <p>La presente Convocatoria está abierta a todas y todos los jóvenes que hayan concluido o que estén
+        actualmente cursando tercer grado de secundaria, para que participen en el proceso de ingreso a primer
+        grado de bachillerato, impartido en las siguientes escuelas oficiales: Preparatorias Estatales, Colegio de
+        Bachilleres del Estado de Yucatán (COBAY), COBAY Educación Media Superior a Distancia (EMSAD), Colegio
+        de Estudios Científicos y Tecnológicos del Estado de Yucatán (CECyTEY), Dirección General de Educación
+        Tecnológica Agropecuaria y Ciencias del Mar (DGETAyCM), Dirección General de Educación Tecnológica
+        Industrial (DGETI), Centro de Educación Artística “Ermilo Abreu Gómez” (CEDART), y Preparatoria Federal
+        por Cooperación “Miguel Ángel” (PREFECO).</p>
+        <h2>Bases - Primera del Registro</h2>
+      <p>1. Realizar el registro por Internet del 04 de marzo al 03 de mayo de 2024, a partir de las
+        11:00 horas, en el portal www.bachillerato.yucatan.gob.mx en donde la o el aspirante deberá capturar
+        la información solicitada y seleccionar la escuela que ofrece el bachillerato al que desea ingresar como
+        primera opción.</p>
+      <p>2. Seleccionar dos opciones adicionales para el caso de no ser admitido en su primera opción. Una
+        vez elegidos los planteles y su orden de preferencia, éstos no podrán ser modificados. Consultar
+        en el mismo portal la lista de escuelas que NO pueden ser seleccionadas como segunda y tercera
+        opción.</p>
+      <p>3. Cargar a la plataforma los siguientes documentos (revisar antes la guía para el registro que se encuentra
+        en el portal www.bachillerato.yucatan.gob.mx):
+        a) Fotografía del sustentante (fondo blanco, sin filtro y con cara descubierta, el formato deberá ser
+        .png o .jpg de máximo 200kb).
+        b) Clave Única de Registro de Población (CURP) (formato PDF que se puede descargar de
+        https://www.gob.mx/curp/).
+        c) Hoja de Derivación (Constancia de estudios con promedio general de secundaria), aplica solo
+        para los aspirantes a ingresar a la Preparatoria Estatal N° 13 “Plantel Azteca Yucatán”, misma que
+        se solicita a la Dirección del plantel donde cursa su Educación Secundaria.
+        c) Ficha de depósito original expedida por el banco o comprobante de transferencia bancaria, con
+        su nombre completo escrito con letra legible (formato PDF, .png o .jpg de máximo 200kb)
+        verificando también que exista esta claridad en el folio de transferencia y la cantidad pagada.</p>
+      <p>4. Imprimir el PASE DE INGRESOAL EXAMEN(a partir de las 11:00 horas del 03 de junio de 2024 en el mismo
+        portal donde se realizó el registro www.bachillerato.yucatan.gob.mx).</p>
+      <p></p>
+    </div>
+    <div class="imagen">
+      <img src="convo.png" alt="Escuela" width="800">
+    </div>
+    <h2>Aviso Importante</h2>
+    <p>Se anulará el registro por falsedad en los datos de cualquier documento solicitado.
+        Efectuado el pago, no habrá reembolso. Es responsabilidad de la o el aspirante realizar correctamente el
+        registro y concluirlo según las fechas establecidas en la presente Convocatoria.</p>
+        <h2>Segunda del Examen</h2>
+        <p>1. Se aplicará el examen de ingreso a bachillerato de manera presencial el día sábado 08 de junio de 2024 de
+            8:00 a 12:30 horas.</p>
+        <p>2. El aspirante deberá presentarse media hora antes en el plantel seleccionado con la siguiente
+            documentación:
+            a) Pase de ingreso al examen con fotografía (podrá descargarse a partir de las 11:00 horas del 03 de
+            junio de 2024 en el mismo portal donde se realizó el registro www.bachillerato.yucatan.gob.mx).
+            b) Ficha de depósito original expedida por el banco o comprobante de transferencia bancaria.
+            c) Lápices 2 1⁄2 con punta de grafito, una goma para borrar y un sacapuntas de bolsillo.</p>
+        <p>3. En ningún caso se aplicará el examen en una sede y horario diferentes.</p>
+        <p>5. Después de 10 minutos de haber iniciado el examen NO SERÁ ADMITIDO ningún
+            sustentante.</p>
+        <p>6. Si los datos de la escuela seleccionada como primera opción en su comprobante de preinscripción, no
+            coinciden con la escuela donde presentó el examen o el alumno no se encuentra preinscrito, dicho examen
+            quedará anulado.</p>
+        <h2>TERCERA. DE LA SELECCIÓNDE LAS Y LOS ASPIRANTES</h2>
+        <p>1. El examen se utiliza como instrumento de selección únicamente en los planteles de bachillerato que
+            registren una demanda superior al cupo disponible, en tal sentido, en dichas escuelas la admisión está
+            sujeta a la puntuación que obtenga el aspirante en el examen.</p>
+        <h2>CUARTA. DE LA PUBLICACIÓNDE RESULTADOS</h2>
+        <p>1. A partir de las 11:00 horas del 24 de junio de 2024, se publicarán los resultados por subsistemas, y la o el
+            aspirante podrá consultarlos según el plantel donde sustentó su examen y descargar el reporte individual de
+            resultados en el portal: www.bachillerato.yucatan.gob.mx
+            En el caso del Centro de Educación Artística (CEDART) “Ermilo Abreu Gómez”, los resultados serán
+            publicados en su Portal https://sgeia.inba.gob.mx/ en fecha dada a conocer en el mismo sitio.</p>
+            
+        <h1>A continuacion te dejamos un breve video para darte una idea de lo que contiene un examen de admisión</h1>    
+    <video width="640" center height="360" controls>
+        <source src="videolocal.mp4" type="video/mp4">
+            
+        <div class="imagen">
+                <img src="convo.png" alt="Escuela" width="800">
+              </div>
+  </div>
+
+</body>
+</html>

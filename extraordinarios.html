@@ -1,0 +1,185 @@
+<html>
+<head>    
+    <title>INFORMACION EXTRAORDINARIOS</title>
+    <style>
+        table {border-collapse: collapse; width: 100%;} th, 
+        td {border: 1px solid rgb(0, 0, 0); padding: 5px;}
+        th {text-align: center;}
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  .titulo {
+    background-color: #111e42;
+    color: white;
+    padding: 10px;
+    text-align: center;}
+    .subtitulo
+    {font-size: 36px;
+    text-align: center;}
+    
+     /*menu desplegable*/
+.menu-container {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    .menu-button {
+        background-color: #0099ff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        width: 200px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        transition: background-color 0.3s ease;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+    .menu-container:hover .dropdown-content {
+        display: block;
+        animation: fadeIn 0.3s ease;
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    /*fin menu desplegable*/
+    .logo-izquierdo,
+    .logo-derecho {
+      position: absolute;
+      top: 90%;
+      transform: translateY(-50%);
+    }
+
+    .logo-izquierdo {
+      left: 20px;
+    }
+
+    .logo-derecho {
+      right: 20px;
+    }
+    </style>
+</head>
+<body>
+  <div class="menu-container">
+    <button class="menu-button">Menú</button>
+    <div class="dropdown-content">
+        <a href="Index.html">Inicio</a>
+        <a href="Tabla de Grupos.html">Grupos</a>
+        <a href="libros.html">Libros</a>
+        <a href="uniforme.html">Uniformes</a>
+        <a href="tabla_maestros.html">Maestros</a>
+        <a href="recuperativo.html">Recuper.</a>
+        <a href="paraescolar.html">Paraescolar</a>
+        <a href="convocatoria.html">Registro</a>
+    </div>
+    </div>
+    </div>
+</div>
+<header>
+  <img class="logo-izquierdo" src="cobay.png" width="200" alt="Logo Izquierdo">
+  <img class="logo-derecho" src="cobay.png" width="200" alt="Logo Derecho">
+</header>
+  <div class="titulo">
+    Fechas Extraordinarios
+  </div>
+    <center>
+      <div class="titulo">
+        <h1>EXAMENES EXTRAORDINARIOS DE 1°,3° y 5° SEMESTRE y ESPECIAL APARTIR DE LA 3° OPORTUNIDAD
+        SEMESTRE 2024 - A</h1>
+      </div>
+  </center>
+    <table>
+        <thead>
+            <tr>
+                <th>Oportunidad</th>
+                <th>Fecha de pago</th>
+                <th>Fecha de aplicacion</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Paraescolar Y tutoria de 3°y 5° Semestre.</th>
+                <th>20 y 21 de febrero </th>
+                <th>23 y 24 de febrero</th>
+            </tr>
+            <tr>
+              <th>1° Oportunidad</th>
+              <th>27 y 28 de febrero</th>
+              <th>1 de marzo</th>
+            </tr>
+            <tr>
+              <th>2° Oportunidad</th>
+              <th>5 y 6 de marzo</th>
+              <th>8 de marzo</th>
+            </tr>
+            <tr>
+              <th>3° Oportunidad</th>
+              <th>12 y 13 de marzo</th>
+              <th>15 de marzo</th>
+            </tr>
+            <tr>
+              <th>4° Oportunidad</th>
+              <th>9 y 10 de abril</th>
+              <th>12 de abril</th>
+            </tr>
+            <tr>
+              <th>5° Oportunidad</th>
+              <th>16 y 17 de abril</th>
+              <th>19 de abril</th>
+            </tr>
+            <tr>
+              <th>6° Oportunidad</th>
+              <th>23 y 24 de abril</th>
+              <th>26 de abril</th>
+            </tr>
+            <tr>
+              <th>7° Oportunidad</th>
+              <th>6 y 7 de mayo</th>
+              <th>9 de mayo</th>
+            </tr>
+            <tr>
+              <th>8° Oportunidad</th>
+              <th>21 y 22 de mayo</th>
+              <th>24 de mayo</th>
+            </tr>
+        </tbody>
+    </table>
+    <p></p>
+    <center>
+    <h2>Esta oportunidad es EXCLUSIVA y UNICA OPORTUNIDAD para Paraescolar y Tutorias de 3er. y 5o. semestre. De no presentar estas asignaturas se le dara baja del sistema.</h2>
+    <h1>Horario de pago: 8:00 a.m. a 1:00 p.m.</h1>
+    <h1>Traer Importe exacto</h1>
+    </center>
+</body>
+</html>

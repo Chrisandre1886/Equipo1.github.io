@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avisos de Exámenes Recuperativos</title>
+<style>
+  /*menu desplegable*/
+  .menu-container {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    .menu-button {
+        background-color: #0099ff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        width: 200px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        transition: background-color 0.3s ease;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+    .menu-container:hover .dropdown-content {
+        display: block;
+        animation: fadeIn 0.3s ease;
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    /*fin menu desplegable*/
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+
+  .aviso {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-left: 6px solid #007bff;
+  }
+
+  .aviso h2 {
+    margin-top: 0;
+    color: #007bff;
+  }
+
+  .aviso p {
+    color: #555;
+  }
+
+  .aviso img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+  }
+
+  .search-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+
+  @media screen and (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+    input[type="text"] {
+      width: 100%;
+    }
+  }
+
+  .logo-izquierdo,
+    .logo-derecho {
+      position: absolute;
+      top: 20%;
+      transform: translateY(-50%);
+    }
+
+    .logo-izquierdo {
+      left: 20px;
+    }
+
+    .logo-derecho {
+      right: 20px;
+    }
+</style>
+</head>
+<body>
+  <img class="logo-izquierdo" src="cobay.png" width="200" alt="Logo Izquierdo">
+  <img class="logo-derecho" src="cobay.png" width="200" alt="Logo Derecho">
+  
+  <div class="menu-container">
+    <button class="menu-button">Menú</button>
+    <div class="dropdown-content">
+        <a href="Index.html">Inicio</a>
+        <a href="Tabla de Grupos.html">Grupos</a>
+        <a href="uniforme.html">Uniformes</a>
+        <a href="libros.html">Libros</a>
+        <a href="extraordinarios.html">Extraor.</a>
+        <a href="paraescolar.html">Paraescolar</a>
+        <a href="tabla_maestros.html">Maestros</a>
+        <a href="convocatoria.html">Registro</a>
+    </div>
+    </div>
+    </div>
+</div>  
+<div class="container">
+  <h1>Avisos de Exámenes Recuperativos</h1>
+
+  <div class="search-container">
+    <input type="text" id="searchInput" onkeyup="searchAvisos()" placeholder="Buscar por título...">
+  </div>
+
+  <div class="aviso">
+    <h2> Historia de Mexico Intervención de la Educación Obligatoria 1</h2>
+    <p>Maestro: LIC. BUDIP ANCONA REYNA MARÍA </p>
+    <p>Forma de evaluar: Evaluacionen linea </p>
+    <p>Dia y Hora de Evaluacion: 24 de enero - 3:20pm </p>
+    <p>Aula asignada: Biblioteca </p>
+  </div>
+
+  <div class="aviso">
+    <h2>HUMANIDADES I CULTURA DIGITAL</h2>
+    <p>Maestro: LCS. BURGOS BECERRA SARA GUADALUPE  </p>
+    <p>Forma de evaluar: Actividades en linea </p>
+    <p>Dia y Hora de Evaluacion: 25 de enero - 4:30pm </p>
+    <p>Aula asignada: 2108, 2101</p>
+  </div>
+
+  <div class="aviso">
+    <h2>TECNOLOGÍAS DE LA INFORMACIÓN Y LA COMUNJCACIÓN III</h2>
+    <p>Maestro: LCS. BURGOS BECERRA SARA GUADALUPE </p>
+    <p>Forma de evaluar: Se entregan en classroom </p>
+    <p>Dia y Hora de Evaluacion: 26 de enero - 2:30pm </p>
+    <p>Aula asignada: 2101 </p>
+  </div>
+
+  <div class="aviso">
+    <h2>LABORATORIO DE INVESTIGACIONES, MATERIA Y SUS INTERACCIONES</h2>
+    <p>Maestro: QBB. CABRERA SÁNCHEZ YENDI ARELI </p>
+    <p>Forma de evaluar: PROYECTO 50%, 50% EXAMEN EN LINEA </p>
+    <p>Dia y Hora de Evaluacion: 25 de enero - 4:30pm </p>
+    <p>Aula asignada: 2504, 2101</p>
+  </div>
+  
+  <div class="aviso">
+    <h2>HISTORIA UNIVERSAL CONTEMPORANEA, DERECHO I</h2>
+    <p>Maestro: LIC. CASTILLO  HERRERA JOSÉ FELIX</p>
+    <p>Forma de evaluar: Proyecto 100% </p>
+    <p>Dia y Hora de Evaluacion: 26 de enero - 4:30pm </p>
+    <p>Aula asignada: 2301 </p>
+  </div>
+
+  <div class="aviso">
+    <h2>INGLES I</h2>
+    <p>Maestro: LM.  CERVERA MOLINA ANA BERTHA </p>
+    <p>Forma de evaluar: Proyecto 100% </p>
+    <p>Dia y Hora de Evaluacion: 24 de enero - 1:40pm </p>
+    <p>Aula asignada: 2102 </p>
+  </div>
+
+  <div class="aviso">
+    <h2>PENSAMIENTO MATEMÁTICO</h2>
+    <p>Maestro: DRA. CUTZ KANTÚN BLANCA MARISOL </p>
+    <p>Forma de evaluar: 50% TRABAJO ( EJERCICIOS) y 50% EXAMEN ESCRITO </p>
+    <p>Dia y Hora de Evaluacion: 24 de enero - 4:30pm </p>
+    <p>Aula asignada: 2101 </p>
+  </div>
+
+  <div class="aviso">
+    <h2>CULTURA DIGÍTAL I, TECNOLOGÍAS DE LA INFORMACIÓN Y LA COMUNICACIÓN III</h2>
+    <p>Maestro: TSUI.  CHI HAAS DAVID FERNANDO </p>
+    <p>Forma de evaluar: 100% en linea </p>
+    <p>Dia y Hora de Evaluacion: 26 de enero - 5:20pm </p>
+    <p>Aula asignada: Sala de computo </p>
+  </div>
+
+  <div class="aviso">
+    <h2>MATEMÁTICAS III, MATEMÁTICAS V, HUMANIDADES I, PENSAMIENTO MATEMÁTICO</h2>
+    <p>Maestro: ING. DESMOCTT SALINAS DANIEL </p>
+    <p>Forma de evaluar: Examen 100% </p>
+    <p>Dia y Hora de Evaluacion: 25 de enero - 2:30pm </p>
+    <p>Aula asignada: 2304 </p>
+  </div>
+
+  <div class="aviso">
+    <h2>FÍSICA I</h2>
+    <p>Maestro: IA. DÍAZ AKÉ EDIER FERMÍN </p>
+    <p>Forma de evaluar: 50% PROYECTO, 50 % EVELUACIÓN EN LINEA </p>
+    <p>Dia y Hora de Evaluacion: 24 de enero - 2:30pm </p>
+    <p>Aula asignada: 2502 </p>
+  </div>
+
+  <div class="aviso">
+    <h2>MATEMÁTICAS  V, MATEMÁTICAS  III, TEMAS SELECTOS DE FÍSICA</h2>
+    <p>Maestro: ISC. FLORES GÓNGORA RÓGER ARMANDO </p>
+    <p>Forma de evaluar: Examen escrito 100%</p>
+    <p>Dia y Hora de Evaluacion: 25 DE ENERO  (1:40 PM),  25 DE ENERO   (4:30 PM), 24 DE ENERO (1:40 PM) </p>
+    <p>Aula asignada: 2307 </p>
+  </div>
+
+  <div class="aviso">
+    <h2>TEMAS SELECTOS DE MATEMÁTICAS I</h2>
+    <p>Maestro: LEM. FLORES SABIDO JOSÉ MIGUEL</p>
+    <p>Forma de evaluar: Examen escrito 100% </p>
+    <p>Dia y Hora de Evaluacion: 25 de enero - 2:30pm </p>
+    <p>Aula asignada: 2501 </p>
+  </div>
+
+  <div class="aviso">
+    <h2> ADMINISTRACIÓN</h2>
+    <p>Maestro: LAE. GARCÍA ECHEVERRÍA ANEL ROXANA</p>
+    <p>Forma de evaluar: EVALUACIÓN ESCRITA 100% </p>
+    <p>Dia y Hora de Evaluacion: 24 DE ENERO   (2:00 PM)   </p>
+    <p>Aula asignada: ?</p>
+  </div>
+  <div class="aviso">
+    <h2>SOCIALES, HISTORIA DE MÉXICO I, LENGUA Y COMUNICACIÓN </h2>
+    <p>Maestro: LE. GÓMEZ GARCÍA EDGAR ISMÁEL </p>
+    <p>Forma de evaluar:50 % EXAMEN FORMULARIO, 50 % PORTAFOLIO  CLASSROOM </p>
+    <p>Dia y Hora de Evaluacion:  25 DE ENERO    (3:20 PM)     PORTAFOLIO, 26 DE ENERO   (3:20 PM)       EXAMEN</p>
+    <p>Aula asignada: </p>
+  </div>
+  
+  <div class="aviso">
+    <h2>HUMANIDADES I,  CIENCIAS SOCIALES I,  PSICOLOGÍA I </h2>
+    <p>Maestro: PSIC. GÓNGORA XOOL LISSET  </p>
+    <p>Forma de evaluar:EVALUACIÓN EN  LINEA 100 % </p>
+    <p>Dia y Hora de Evaluacion: 24 DE ENERO   (3:20 PM) </p>
+    <p>Aula asignada: 2102 </p>
+  </div>
+
+  <div class="aviso">
+    <h2>FÍSICA I,  TEMAS SELECTOS DE QUIMICA I,  LA MATERIA Y SUS INTERACCIONES </h2>
+    <p>Maestro: M. EN MP LEY LEAL CINTHIA ALEJANDRINA </p>
+    <p>Forma de evaluar:PORTAFOLIO DE EVIDENCIAS  50 %  y PARCIALITO 50 % </p>
+    <p>Dia y Hora de Evaluacion: 24 DE ENERO  (4:30 PM),  24 DE ENERO   (4:30 PM),  24 DE ENERO  (5:20 PM) </p>
+    <p>Aula asignada: 2507</p>
+  </div>
+
+  <div class="aviso">
+    <h2>LABORATORIO DE INVESTIGACIONES I  y CIENCIAS SOCIALES  I </h2>
+    <p>Maestro: LE. ORTIZ TUYUB JORGE ANTONIO </p>
+    <p>Forma de evaluar: EVALUACIÓN EN LINEA 50 %  y  ACTIVIDADES DE APRENDIZAJE 50%,   ACTIVIDADES DE APRENDIZAJE DE LOS 3 PARCIALES 50 %  y EVALUACIÓN EN LINEA  50 % </p>
+    <p>Dia y Hora de Evaluacion: 25 DE ENERO  (4:30 PM)  y  25 DE ENERO   (6:10 PM)  </p>
+    <p>Aula asignada: 2103 </p>
+  </div>
+
+  <div class="aviso">
+    <h2>INGLES I </h2>
+    <p>Maestro: MTRA. PECH UITZ GILDA ROSA </p>
+    <p>Forma de evaluar: PORTAFOLIO  DE EVIDENCIAS 70 % y EXAMEN EN LINEA 30 % </p>
+    <p>Dia y Hora de Evaluacion: 24 DE ENERO   (3:20 PM),   EL PORTAFOLIO SE ENTREGA ANTES  DE EXAMEN</p>
+    <p>Aula asignada: 2301 </p>
+  </div>
+
+  <div class="aviso">
+    <h2>GEOGRAFIA y CIENCIAS DE LA SALUD </h2>
+    <p>Maestro: IBQ. PÉREZ AGUILAR JORGE ARTURO </p>
+    <p>Forma de evaluar: EVALUACIÓN ESCRITA 100%</p>
+    <p>Dia y Hora de Evaluacion: 25 DE ENERO (3:20 PM)</p>
+    <p>Aula asignada: 2501 y 2502</p>
+  </div>
+
+  <div class="aviso">
+    <h2>MATEMÁTICAS V  y  MATEMÁTICAS FINACIERAS I </h2>
+    <p>Maestro: LM. PÉREZ ESPADAS ALBERTO ALONSO </p>
+    <p>Forma de evaluar:EJRCICIOS 50 % y  EXAMEN 50  % </p>
+    <p>Dia y Hora de Evaluacion: 26 DE ENERO (2:30 PM)   ANTES DEL EXAMEN SE RECIBE EL PORTAFOLIO </p>
+    <p>Aula asignada: 2502 </p>
+  </div>
+
+  <div class="aviso">
+    <h2>ETIMOLOGÍAS GRECOLATINAS I, LENGUA Y COMUNICACIÓN, CIENCIAS SOCIALES I </h2>
+    <p>Maestro: LIC. RIVERA LEÓN ERNESTO </p>
+    <p>Forma de evaluar: EXAMEN ESCRITO 50 % y PORTAFOLIO DE EVIDENCIAS  50 %</p>
+    <p>Dia y Hora de Evaluacion: 24 DE ENERO  (5:20 PM) y 25 DE ENERO (5:20 PM)    </p>
+    <p>Aula asignada: 2502 </p>
+  </div>
+
+  <div class="aviso">
+    <h2>BIOLOGÍA I </h2>
+    <p>Maestro: MTRA. RODRÍQUEZ CASTRO ERIKA DEL CARMEN </p>
+    <p>Forma de evaluar: PROYECTO 50 %  y  EXAMEN EN  LINEA 50 %</p>
+    <p>Dia y Hora de Evaluacion: 26 DE ENERO  ( 2:30 PM) </p>
+    <p>Aula asignada: Laboratorio 1 </p>
+  </div>
+
+  <div class="aviso">
+    <h2> INGLES I y INGLES III</h2>
+    <p>Maestro: LD. VÁZQUEZ ESTRELLA JESÚS </p>
+    <p>Forma de evaluar: PROYECTO 100 % </p>
+    <p>Dia y Hora de Evaluacion: 25 DE ENERO  (3:00 PM) </p>
+    <p>Aula asignada: 2501</p>
+  </div>
+
+  <div class="aviso">
+    <h2>HUMANIDADES  </h2>
+    <p>Maestro: TSUA. VELAZCO HERNÁNDEZ GERMÁN </p>
+    <p>Forma de evaluar: 50 %  EXAMEN ESCRITO,  50 % PORTAFOLIO DE EVIDENCIAS </p>
+    <p>Dia y Hora de Evaluacion: 25 DE ENERO  (3:20 PM)  </p>
+    <p>Aula asignada: 2107 </p>
+  </div>
+
+  <div class="aviso">
+    <h2> LABORATORIO DE INVESTIGACIONES I  y CIENCIAS SOCIALES  I</h2>
+    <p>Maestro: LIC. VERDE CENTENO ELENI LETICIA </p>
+    <p>Forma de evaluar: ACTIVIDADES EN LINEA 50 %   y  EVALUACIÓN EN LINEA 50 % </p>
+    <p>Dia y Hora de Evaluacion: 25 DE ENERO (2:30 PM) </p>
+    <p>Aula asignada: 2507 </p>
+  </div>
+
+  <div class="aviso">
+    <h2> CONTABILIDAD I</h2>
+    <p>Maestro: LAE. VILLAMOR MUÑIZ JOSÉ RENÉ DE JESÚS </p>
+    <p>Forma de evaluar: ESCRITA 100 % </p>
+    <p>Dia y Hora de Evaluacion: 25 DE ENERO (4:30 PM) </p>
+    <p>Aula asignada: 2502 </p>
+  </div>
+
+  <div class="aviso">
+    <h2> TUTORÍAS III</h2>
+    <p>Maestro: PSIC. VILLANUEVA DURÁN GUADALUPE YANET </p>
+    <p>Forma de evaluar: PORTAFOLIO DE EVIDENCIAS  100 % y  LAS ACTIVIDADES APLICANDO </p>
+    <p>Dia y Hora de Evaluacion: 2 DE FEBRERO  (1:40 PM) </p>
+    <p>Aula asignada: </p>
+  </div>
+
+  <div class="aviso">
+    <h2>CALCULO DIFERENCIAL I,  HISTORIA DE MÉXICO I,  MATEMÁTICAS III </h2>
+    <p>Maestro: LE. COUOH PUC DELMY LUCELY </p>
+    <p>Forma de evaluar: ACTIVADES DE TODO LO VISTO EN CLASE 50 %    PORTAFOLIO DE EVIDENCIAS  50 % </p>
+    <p>Dia y Hora de Evaluacion: 26 DE ENERO (5:20 PM),   26 DE ENERO  (7:00 PM),  26 DE ENERO  (6:10 PM) </p>
+    <p>Aula asignada: 2505, 2304, 2302 </p>
+  </div>
+</div>
+
+<script>
+function searchAvisos() {
+  var input, filter, container, avisos, h2, i, txtValue;
+  input = document.getElementById("searchInput");
+  filter = input.value.toUpperCase();
+  container = document.getElementsByClassName("container")[0];
+  avisos = container.getElementsByClassName("aviso");
+  for (i = 0; i < avisos.length; i++) {
+    h2 = avisos[i].getElementsByTagName("h2")[0];
+    txtValue = h2.textContent || h2.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      avisos[i].style.display = "";
+    } else {
+      avisos[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+</body>
+</html>
+
+
+

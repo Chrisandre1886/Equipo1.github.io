@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Colegio de Bachilleres del estado de Yucatan</title>
+ <link href="style.css" rel="stylesheet"
+ type="text/css"/>
+ </head>
+ <style>
+    
+ /*menu desplegable*/
+ .menu-container {
+     position: fixed;
+     top: 20px;
+     right: 20px;
+     z-index: 1000;
+ }
+
+ .menu-button {
+     background-color: #0099ff;
+     color: white;
+     padding: 10px 20px;
+     border: none;
+     cursor: pointer;
+     border-radius: 5px;
+     transition: background-color 0.3s ease;
+ }
+
+ .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: #f9f9f9;
+     width: 200px;
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+     z-index: 1;
+     border-radius: 5px;
+     overflow: hidden;
+ }
+
+ .dropdown-content a {
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+     transition: background-color 0.3s ease;
+ }
+
+ .dropdown-content a:hover {
+     background-color: #ddd;
+ }
+ .menu-container:hover .dropdown-content {
+     display: block;
+     animation: fadeIn 0.3s ease;
+ }
+ @keyframes fadeIn {
+     from {
+         opacity: 0;
+         transform: translateY(-10px);
+     }
+     to {
+         opacity: 1;
+         transform: translateY(0);
+     }
+ }
+ /*fin menu desplegable*/
+ </style>
+ <body>
+    <div class="menu-container">
+        <button class="menu-button">Menú</button>
+        <div class="dropdown-content">
+            <a href="uniforme.html">Uniformes</a>
+            <a href="libros.html">Libros</a>
+            <a href="extraordinarios.html">Extraor.</a>
+            <a href="recuperativo.html">Recuper.</a>
+            <a href="convocatoria.html">Registro</a>
+        </div>
+        </div>
+        </div>
+    </div>
+   <script src="scrip.js"></script>
+<!---Seccion 1-->
+ <div id="primera-seccion">
+ <div id="barra-navegacion">
+ <p id="logo">Colegio <span style="color: #ffffff;
+ ">De Bachilleres Del Estado  De YUCATÁN </span></p>
+ <nav>
+    <a href="tabla_maestros.html"  class="enlace-menu">Maestros</a>
+    <a href="paraescolar.html"  class="enlace-menu">Paraescolares</a>
+    <a href="Tabla de Grupos.html"  class="enlace-menu">Grupos</a>
+ </nav>
+ </div>
+ <div id="primera-seccion-contenido">
+    <p>Turno Vespertino</p>
+    <hr>
+    <h1>Plantel Cobay Santa Rosa</h1>
+    <a href="historiacobay.html" class="btn-verde">Mas informacion</a>
+</div>
+</div>
+<!--Seccion 2-->
+<div id="segunda-seccion">
+<p class="frase">Un colegio con los mejores estandares de Merida</p>
+<p class="frase">El plantel Santa Rosa del Colegio de Bachilleres, se localiza al sur de la cd, de Mérida y cuenta con gran demanda entre los jóvenes Yucatecos.</p>
+</div>
+ </body>
+<!--Seccion 3-->
+<div id="tercera-seccion">
+<div id="titulo">
+<h2>Eventos Destacados</h2>
+<hr>
+</div>
+<div id="container-tercera-seccion">
+ <div class="img-tercera">
+    <img src="inicio4.jpg" width="500">    
+    <h6>FERIA DE UNIVERSIDADES 2024</h6>   
+     <p>¡Estimados estudiantes y participantes interesados!
+        Nos complace invitarlos cordialmente a un evento de reflexión y exploración crucial en sus trayectorias académicas y profesionales. Nuestro evento ofrecerá herramientas prácticas, discusiones enriquecedoras y ejercicios reflexivos guiados por expertos en orientación vocacional. ¡No se pierdan esta valiosa oportunidad de dar un paso más cerca hacia su futuro profesional!</p>
+    </div>
+        <div class="img-tercera">
+        <img src="inicio5.jpg" width="2500">
+        <h6>Reunion de padres de familia</h6>
+        <p>Aviso de Reunion de padres de familia para los siguientes grupos: 2601, 2605 </p>
+         </div>
+ </div>
+ </div>
+<!--Seccion 4-->
+<div id="cuarta-seccion">
+<div id="contenedor">
+<div id="cuarta-seccion-izq" class="mitad"></div>
+<div id="cuarta-seccion-der" class="mitad">
+<h3>Uno de los mejores colegios</h3>
+<hr>
+<h3>Convocatoria Abierta</h3>
+ <a href="convocatoria.html" class="btn-verde">Mas informacion</a>
+</div>
+</div>
+</div>
+<!--Seccion 5-->
+<div id="quinta-seccion">
+  <div id="quinta-seccion-izquierda">
+    <h3>Eventos Pasados</h3>
+    <hr>
+    <p>Desfile de alumnos</p>
+</div>
+<div id="quinta-seccion-derecha">
+<iframe width="500" height="315" src="https://www.youtube.com/embed/hhblwF402QY?si=nprIoewO7TzUzG_O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+</div>
+<!---Pie de pagina-->
+<footer>
+    <p>Cobay Santa Rosa 2024
+        -- email: cobaysantarosa@edu.mx
+    </p>
+<p> Copyrigth 2024 <span style="color: #20bf6b;"> -- Colegio de Bachilleres del Estado de Yucatan</span></p>
+</footer>
+
+</body>
+</html>

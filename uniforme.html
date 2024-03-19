@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Ropa</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<style>
+    /*menu desplegable*/
+.menu-container {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    .menu-button {
+        background-color: #0099ff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        width: 200px;
+        box-shadow: 0 8px 16px 0 rgba(47, 10, 116, 0.2);
+        z-index: 1;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        transition: background-color 0.3s ease;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+    .menu-container:hover .dropdown-content {
+        display: block;
+        animation: fadeIn 0.3s ease;
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    /*fin menu desplegable*/
+</style>
+<body>
+    <div class="menu-container">
+        <button class="menu-button">Menú</button>
+        <div class="dropdown-content">
+            <a href="Index.html">Inicio</a>
+            <a href="Tabla de Grupos.html">Grupos</a>
+            <a href="libros.html">Libros</a>
+            <a href="extraordinarios.html">Extraor.</a>
+            <a href="tabla_maestros.html">Maestros</a>
+            <a href="recuperativo.html">Recuper.</a>
+            <a href="paraescolar.html">Paraescolar</a>
+            <a href="convocatoria.html">Registro</a>
+        </div>
+        </div>
+        </div>
+    </div>
+<header>
+    <div class="container">
+        <h1>Uniformes</h1>
+        
+</header>
+
+<main>
+    <section class="gallery-container">
+      <article class="gallery">
+            <figure class="item">
+                <img src="foto1.jpg" alt="Imagen 1">
+                <figcaption>
+                    <h2>Artículo 1</h2>
+                    <p>Camisa Paraescolar</p>
+                </figcaption>
+            </figure>
+        </article>
+         <article class="gallery">
+            <figure class="item">
+                <img src="foto2.jpg" alt="Imagen 1">
+                <figcaption>
+                    <h2>Artículo 2</h2>
+                    <p>Pantalon Azul</p>
+                </figcaption>
+            </figure>
+        </article>
+         <article class="gallery">
+            <figure class="item">
+                <img src="foto3.jpg" alt="Imagen 1">
+                <figcaption>
+                    <h2>Artículo 3</h2>
+                    <p>Camisa de Uniforme Cobay</p>
+                </figcaption>
+            </figure>
+        </article>
+        
+    </section>
+
+    <section class="additional-content">
+        <!-- Contenido adicional -->
+        <h2>Testimonios de clientes</h2>
+        <div class="testimonial">
+    <p>"¡Esta tienda tiene la mejor selección de ropa que he visto! Encontré el traje perfecto para mi graduación y recibí muchos elogios. ¡Gracias!"</p>
+    <p>- <span class="username">Ana S.</span>, Cliente satisfecha</p>
+</div>
+
+<div class="testimonial">
+    <p>"Estoy impresionado por la calidad de la ropa y el servicio al cliente de esta tienda. Siempre me siento bienvenido y bien atendido. ¡Altamente recomendado!"</p>
+    <p>- <span class="username">Carlos M.</span>, Cliente leal</p>
+</div>
+
+<div class="testimonial">
+    <p>"He estado comprando en esta tienda durante años y nunca me ha decepcionado. La ropa es elegante, de alta calidad y a precios asequibles. ¡No puedo pedir más!"</p>
+    <p>- <span class="username">Laura D.</span>, Cliente satisfecha</p>
+</div>
+
+<div class="testimonial">
+    <p>"¡Increíble experiencia de compra! Encontré exactamente lo que estaba buscando y el proceso de compra fue rápido y sencillo. Definitivamente volveré." </p>
+    <p>- <span class="username">Miguel A.</span>, Cliente leal</p>
+</div>
+
+<div class="testimonial">
+    <p>"La ropa de esta tienda siempre me hace sentir elegante y seguro. Recibo muchos cumplidos cuando la llevo puesta. ¡Gracias por mantenerme a la moda!"</p>
+    <p>- <span class="username">Sofía R.</span>, Cliente satisfecha</p>
+</div>
+
+<div class="testimonial">
+    <p>"No puedo expresar lo feliz que estoy con mi compra. La ropa es de alta calidad y se ajusta perfectamente. ¡Sin duda volveré a comprar aquí!"</p>
+    <p>- <span class="username">Javier L.</span>, Cliente leal</p>
+</div>
+
+
+    </section>
+</main>
+
+<footer>
+    <p>Copyrigth 2024 -  Colegio de Bachilleres del Estado de Yucatan</p>
+</footer>
+
+</body>
+</html>

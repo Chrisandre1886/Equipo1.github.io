@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario de clases - cobay santa rosa</title>
+    <style>
+        /*menu desplegable*/
+    .menu-container {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    .menu-button {
+        background-color: #0099ff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        width: 200px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        transition: background-color 0.3s ease;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+    .menu-container:hover .dropdown-content {
+        display: block;
+        animation: fadeIn 0.3s ease;
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    /*fin menu desplegable*/
+table {
+    width: 80%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+th {
+    background-color: #7d7fc4;
+    border: 1.5px solid #000000;
+    text-align: left;
+    padding: 8px;
+}
+
+td {
+    border: 1.5px solid #000000;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f2f2f2;
+}
+header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo-izquierdo,
+    .logo-derecho {
+      position: absolute;
+      top: 10%;
+      transform: translateY(-50%);
+    }
+
+    .logo-izquierdo {
+      left: 20px;
+    }
+
+    .logo-derecho {
+      right: 20px;
+    }
+
+    </style>
+</head>
+<body>
+
+        <img class="logo-izquierdo" src="cobay.png" width="200" alt="Logo Izquierdo">
+        <img class="logo-derecho" src="cobay.png" width="200" alt="Logo Derecho">
+      
+    <div class="menu-container">
+        <button class="menu-button">Menú</button>
+        <div class="dropdown-content">
+            <a href="Index.html">Inicio</a>
+            <a href="uniforme.html">Uniformes</a>
+            <a href="libros.html">Libros</a>
+            <a href="extraordinarios.html">Extraor.</a>
+            <a href="Tabla de Grupos.html">Grupos</a>
+            <a href="tabla_maestros.html">Maestros</a>
+            <a href="recuperativo.html">Recuper.</a>
+            <a href="convocatoria.html">Registro</a>
+        </div>
+        </div>
+        </div>
+    </div>
+    <header>
+        <h1>Horarios de Paraescolares</h1>
+    </header>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Futbol</th>
+                <td></td>
+                <td></td>
+                <td>7:50 A 8:40 segundo semestre</td>
+                <td></td>
+                <td></td>
+               
+            </tr>
+            <tr>
+                <th>Futbol</th>
+                <td></td>
+                <td></td>
+                <td>8:40 A 9:30 cuarto semestre</td>
+                <td></td>
+                <td></td>
+                
+            </tr>
+            <tr>
+                <th>Futbol</th>
+                <td></td>
+                <td></td>
+                <td>9:50 A 10:40 sexto semestre</td>
+                <td></td>
+                <td></td>
+              
+            </tr>
+            <tr>
+                <th>Voleibol</th>
+                <td>7:00 a 7:50 am  (varones)    2201, 2202, 2203 y 2204 </td>
+                <td>7:00 a 7:50 am  cuarto semestre varonil</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Voleibol</th>
+                <td>7:50 a 8:40 am (mujeres )      2201, 2202, 2303 y 2204)</td>
+                <td>7:50 a 8:40 am     cuarto semestre femenil</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Voleibol</th>
+                <td>8:40 a 9:30 am  (mujeres  )    2205, 2206, 2207 y 2208)</td>
+                <td>8:40 a 9:30 am      sexto semestre varones</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Voleibol</th>
+                <td>9:50 a 10:40 </td>
+                <td>8:40 a 9:30 am    sexto semestre varones</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Taller Literario</th>
+                <td>12:20 a 14:30  Todos los segundos semestres</td>
+                <td>11:30 a 13:10      cuartos  y sextos semestres</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                
+            </tr>
+            <tr>
+                <th>Danza Moderna</th>
+                <td></td>
+                <td></td>
+                <td>7:00 a 7:50 am    sexto semestre</td>
+                <td></td>
+                <td></td>
+                
+            </tr>
+            <tr>
+                <th>Danza Moderna</th>
+                <td></td>
+                <td></td>
+                <td>7:50 a 9:30 am      selección vespertina</td>
+                <td></td>
+                <td></td>
+                
+            </tr>
+            <tr>
+                <th>Danza Moderna</th>
+                <td></td>
+                <td></td>
+                <td>9:30 a 10:20          cuarto semestre </td>
+                <td></td>
+                <td></td>
+               
+            </tr>
+            <tr>
+                <th>Danza Moderna</th>
+                <td></td>
+                <td></td>
+                <td>10:20 a 11:30 am      segundo semestre</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Danza Folclorica</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>9:00  a 9:50 am      segundo semestre</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Danza Moderna</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>9:50 a 10:40          cuarto semestre</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Danza Moderna</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>10:40 a 11:30          sexto semestre</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Danza Moderna</th>
+                <td></td>
+                <td>9:50 A 11:00 sexto semestre</td>
+                <td></td>
+                <td></td>
+                <td>7:40 A 9:00 segundo semestre   y   9:00 A 10:00 cuarto semestre  </td>
+            </tr>
+
+            <table>
+                <tr>
+                  <th>Paraescolares</th>
+                </tr>
+                <tr>
+                  <td>ESCOLTA SEGUNDO SEMESTRE ,      INSCRIBIRSE EN EL CODIGO CLASSROOM        mj2sxjx</td>
+                </tr>
+                <tr>
+                  <td>BANDA DE GUERRA    SEGUNDO SEMESTRE ,      INSCRIBIRSE EN EL CODIGO CLASSROOM      reeocsr</td>
+                </tr>
+                <tr>
+                  <td>TWD (TAEKWONDO)  SEGUNDO SEMESTRE    INSCRIBIRSE EN EL CODIGO CLASSROOM       kwkvrpe</td>
+                </tr>
+                <tr>
+                  <td>ESCOLTA CUARTO Y SEXTO    SEMESTRE ,      INSCRIBIRSE EN EL CODIGO CLASSROOM        36dief4</td>
+                </tr>
+                <tr>
+                  <td>BANDA DE GUERRA    CUARTO Y SEXTO SEMESTRE ,      INSCRIBIRSE EN EL CODIGO CLASSROOM      jhxix22 </td>
+                </tr>
+                <tr>
+                  <td>TWD (TAEKWONDO)  CUARTO Y SEXTO SEMESTRE    INSCRIBIRSE EN EL CODIGO CLASSROOM       6elkpbw</td>
+                </tr>
+              </table>
+    </table>

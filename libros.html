@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paquetes de Libros</title>
+    <link rel="stylesheet" href="style.css">
+    <style>body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    header {
+        background-color: #0f0066;
+        color: #fff;
+        padding: 20px 0;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+    }
+    
+    nav ul li:not(:last-child) {
+        margin-right: 20px;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+    
+    .search {
+        display: flex;
+        align-items: center;
+    }
+    
+    .search input {
+        padding: 8px;
+        border-radius: 4px;
+        border: none;
+        margin-right: 10px;
+    }
+    
+    .search button {
+        padding: 8px 15px;
+        background-color: yellow;
+        border: none;
+        color: #000000;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .search button:hover {
+        background-color:#0f0066;
+    }
+    
+    .gallery-container {
+        min-height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-x: auto;
+        white-space: nowrap;
+        margin: 20px;
+    }
+    
+    .gallery {
+        display: inline-block;
+    }
+    
+    .item {
+        width: 300px;
+        height: 400px;
+        margin-right: 20px;
+        text-align: center;
+        display: inline-block;
+        vertical-align: top;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+    
+    .item:hover {
+        transform: translateY(-5px);
+    }
+    
+    .item img {
+        width: 100%;
+        height: 60%;
+        object-fit: cover;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    
+    .item figcaption {
+        padding: 20px;
+        height: 40%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    
+    .item h2 {
+        margin-top: 10px;
+    }
+    
+    .item p {
+        color:#0f0066;
+    }
+    
+    .additional-content {
+        padding: 20px;
+    }
+    
+    footer {
+        background-color: #0d0399;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+    }
+    
+    
+    .additional-content {
+      background-color: #f7f7f7; 
+        min-height: 40vh;
+        padding: 20px;
+    }
+    
+    .testimonial {
+        margin-top: 20px;
+        border-left: 4px solid #333;
+        background-color: #fff;
+        padding: 10px;
+    }
+    
+    .testimonial p {
+        margin: 10px 0;
+    }
+    
+    .username {
+        color: #ff0000;
+        font-weight: bold;
+    }
+     /*menu desplegable*/
+.menu-container {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    .menu-button {
+        background-color: #0099ff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        width: 200px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        transition: background-color 0.3s ease;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+    .menu-container:hover .dropdown-content {
+        display: block;
+        animation: fadeIn 0.3s ease;
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    /*fin menu desplegable*/
+    </style>
+    
+</head>
+<body>
+    <div class="menu-container">
+        <button class="menu-button">Menú</button>
+        <div class="dropdown-content">
+            <a href="Index.html">Inicio</a>
+            <a href="Tabla de Grupos.html">Grupos</a>
+            <a href="extraordinarios.html">Extraor.</a>
+            <a href="tabla_maestros.html">Maestros</a>
+            <a href="recuperativo.html">Recuper.</a>
+            <a href="paraescolar.html">Paraescolar</a>
+            <a href="convocatoria.html">Registro</a>
+        </div>
+        </div>
+        </div>
+    </div>
+<header>
+    <center><h1>Paquetes de Libros</h1></center>
+    
+</header>
+
+<main>
+    <section class="gallery-container">
+      <article class="gallery">
+            <figure class="item">
+                <img src="semes1.jpeg" alt="Imagen 1">
+                <figcaption>
+                    <h2>Artículo 1</h2>
+                    <p>Paquete primer semestre</p>
+                </figcaption>
+            </figure>
+        </article>
+
+         <article class="gallery">
+            <figure class="item">
+                <img src="semes2.jpeg" alt="imagen 2">
+                <figcaption>
+                    <h2>Artículo 2</h2>
+                    <p>Paquete segundo semestre</p>
+                </figcaption>
+            </figure>
+        </article>
+    </section>
+         <article class="gallery">
+            <figure class="item">
+                <img src="semes3.jpeg" alt="Imagen 3">
+                <figcaption>
+                    <h2>Artículo 3</h2>
+                    <p>Paquete higiene y salud I</p>
+                </figcaption>
+            </figure>
+        </article>
+        
+         <article class="gallery">
+            <figure class="item">
+                <img src="semes4.jpeg" alt="Imagen 4">
+                <figcaption>
+                    <h2>Artículo 4</h2>
+                    <p>Paquete Administracion I</p>
+                </figcaption>
+            </figure>
+        </article>
+         <article class="gallery">
+            <figure class="item">
+                <img src="semes5.jpeg" alt="Imagen 5">
+                <figcaption>
+                    <h2>Artículo 5</h2>
+                    <p>Paquete TIC I</p>
+                </figcaption>
+            </figure>
+        </article>
+    </figure>
+</article>
+</figcaption>
+ <article class="gallery">
+    <figure class="item">
+        <img src="semes6.jpeg" alt="Imagen 6">
+        <figcaption>
+            <h2>Artículo 6</h2>
+            <p>Paquete TICS II</p>
+        </figcaption>
+    </figure>
+</article>
+ <article class="gallery">
+    <figure class="item">
+        <img src="semes7.jpeg" alt="Imagen 7">
+        <figcaption>
+            <h2>Artículo 7</h2>
+            <p>Paquete Administracion II</p>
+        </figcaption>
+    </figure>
+</article>
+    </figure>
+</article>
+</figure>
+</article>
+ <article class="gallery">
+    <figure class="item">
+        <img src="semes8.jpeg" alt="Imagen 8">
+        <figcaption>
+            <h2>Artículo 8</h2>
+            <p>Paquete Higiene y salud II</p>
+        </figcaption>
+    </figure>
+</article>
+</figure>
+</article>
+ <article class="gallery">
+    <figure class="item">
+        <img src="semes9.jpeg" alt="Imagen 9">
+        <figcaption>
+            <h2>Artículo 9</h2>
+            <p>Paquete TIC III</p>
+        </figcaption>
+    </figure>
+</article>
+</figure>
+</article>
+ <article class="gallery">
+    <figure class="item">
+        <img src="semes10.jpeg" alt="Imagen 10">
+        <figcaption>
+            <h2>Artículo 10</h2>
+            <p>Paquete Higiene y salud III</p>
+        </figcaption>
+    </figure>
+</article>
+</figure>
+</article>
+ <article class="gallery">
+    <figure class="item">
+        <img src="semes11.jpeg" alt="Imagen 11">
+        <figcaption>
+            <h2>Artículo 11</h2>
+            <p>Paquete Administracion III</p>
+        </figcaption>
+    </figure>
+</article>
+</figure>
+</article>
+ <article class="gallery">
+    <figure class="item">
+        <img src="semes12.jpeg" alt="Imagen 12">
+        <figcaption>
+            <h2>Artículo 12</h2>
+            <p>paquete TIC IV</p>
+        </figcaption>
+    </figure>
+</article>
+</figure>
+</article>
+ <article class="gallery">
+    <figure class="item">
+        <img src="semes13.jpeg" alt="Imagen 13">
+        <figcaption>
+            <h2>Artículo 13</h2>
+            <p>paquete Higiene y salud IV</p>
+        </figcaption>
+    </figure>
+</article>
+</figure>
+</article>
+ <article class="gallery">
+    <figure class="item">
+        <img src="semes14.jpeg" alt="Imagen 14">
+        <figcaption>
+            <h2>Artículo 14</h2>
+            <p>paquete Administracion IV</p>
+        </figcaption>
+    </figure>
+</article>
+</figure>
+</article>
+    
+    </section>
+
+    <section class="additional-content">
+        <!-- Contenido adicional -->
+        <h2>reseñas de clientes</h2>
+        <div class="testimonial">
+    <p>"Uno de los paquetes para que mi hijo pudiese tener para hacer sus actividades de la escuela". ¡Gracias!"</p>
+    <p>- <span class="username">Romina S.</span>, Cliente satisfecha</p>
+</div>
+
+<div class="testimonial">
+    <p>"Muy satisfecho con la calidad de los libros de texto"</p>
+    <p>- <span class="username">Mauricio M.</span>, Cliente leal</p>
+</div>
+
+<div class="testimonial">
+    <p>"El contenido de cada libro de los diferentes paqutes son muy buenos e interesantes"</p>
+    <p>- <span class="username">Laura D.</span>, Cliente satisfecha</p>
+</div>
+
+<div class="testimonial">
+    <p>"¡Increíble experiencia de compra! Encontré exactamente lo que estaba buscando y el proceso de compra fue rápido y sencillo. Definitivamente volveré." </p>
+    <p>- <span class="username">Rafael A.</span>, Cliente leal</p>
+</div>
+
+<div class="testimonial">
+    <p>"Los libros de esta tienda siempre me hace sentir feliz y seguro. Recibo muchos conocientos por parte del libro. ¡Gracias por mantenerme actulaizado!"</p>
+    <p>- <span class="username">Sofía R.</span>, Cliente satisfecha</p>
+</div>
+
+<div class="testimonial">
+    <p>"No puedo expresar lo feliz que estoy con mi compra. Los librosque venden es de alta calidad y tienen el material necesario por cada semestre que llevaras en el transcurso del periodo de la prepa . ¡Sin duda volveré a comprar aquí!"</p>
+    <p>- <span class="username">Pedro Celis.</span>, Cliente leal</p>
+</div
+  </section> 
+</main>
+
+<footer>
+    <p>Editorial KLIk &copy; 2024</p>
+</footer>
+
+</body>
+</html>

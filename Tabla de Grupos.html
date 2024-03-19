@@ -1,0 +1,2031 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario de clases - cobay santa rosa</title>
+    <style>
+        /*menu desplegable*/
+    .menu-container {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    .menu-button {
+        background-color: #0099ff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        width: 200px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        transition: background-color 0.3s ease;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+    .menu-container:hover .dropdown-content {
+        display: block;
+        animation: fadeIn 0.3s ease;
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    /*fin menu desplegable*/
+table {
+    width: 80%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+th {
+    background-color: #7d7fc4;
+    border: 1.5px solid #000000;
+    text-align: left;
+    padding: 8px;
+}
+
+td {
+    border: 1.5px solid #000000;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f2f2f2;
+}
+header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+    .logo-izquierdo,
+    .logo-derecho {
+      position: absolute;
+      top: 10%;
+      transform: translateY(-50%);
+    }
+
+    .logo-izquierdo {
+      left: 20px;
+    }
+
+    .logo-derecho {
+      right: 20px;
+    }
+
+    </style>
+</head>
+<body>
+    
+        <img class="logo-izquierdo" src="cobay.png" width="200" alt="Logo Izquierdo">
+        <img class="logo-derecho" src="cobay.png" width="200" alt="Logo Derecho">
+    
+    <div class="menu-container">
+        <button class="menu-button">Menú</button>
+        <div class="dropdown-content">
+            <a href="Index.html">Inicio</a>
+            <a href="uniforme.html">Uniformes</a>
+            <a href="libros.html">Libros</a>
+            <a href="extraordinarios.html">Extraor.</a>
+            <a href="paraescolar.html">Paraescolar</a>
+            <a href="tabla_maestros.html">Maestros</a>
+            <a href="recuperativo.html">Recuper.</a>
+            <a href="convocatoria.html">Registro</a>
+        </div>
+        </div>
+        </div>
+    </div>
+    <header>
+        <h1>Horarios de Grupos</h1>
+    </header>
+    <center><h2>2101</h2></center>
+    <table>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1:40 - 2:30</th>
+                <td>Laboratorio de investigación </td>
+                <td>Ingles</td>
+                <td>Ingles</td>
+                <td></td>
+                <td>Laboratorio de investigación</td>
+               
+            </tr>
+            <tr>
+                <th>2:30 - 3:20</th>
+                <td>Ingles</td>
+                <td>Laboratorio de investigación</td>
+                <td>Cultura Digital</td>
+                <td></td>
+                <td>Tutorias</td>
+                
+            </tr>
+            <tr>
+                <th>3:20 - 4:10</th>
+                <td>La materia y sus interacciones</td>
+                <td>La materia y sus interacciones</td>
+                <td>lengua y comunicación</td>
+                <td>La materia y sus interacciones</td>
+                <td>La materia y sus interacciones</td>
+              
+            </tr>
+            <tr>
+                <th>4:10 - 4:30</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+            </tr>
+            <tr>
+                <th>4:30 - 5:20</th>
+                <td>Lengua y comunicacion</td>
+                <td>Humanidades</td>
+                <td>Pensamiento matematico</td>
+                <td>Humanidades</td>
+                <td>Pensamiento matematico</td>
+                
+            </tr>
+            <tr>
+                <th>5:20 - 6:10</th>
+                <td>Pensamiento matematico</td>
+                <td>Ciencias Sociales</td>
+                <td>Pensamiento matematico</td>
+                <td>Humanidades</td>
+                <td>Humanidades</td>
+                
+            </tr>
+            <tr>
+                <th>6:10 - 7:00</th>
+                <td></td>
+                <td>Cultura DIGITAl</td>
+                <td>Ciencias sociales</td>
+                <td>Tutorias</td>
+                <td></td>
+                
+            </tr>
+            <tr>
+                <th>7:00 - 7:50</th>
+                <td></td>
+                <td>Cultura DIGITAl</td>
+                <td></td>
+                <td>Lenguaje y comunicacion</td>
+                <td></td>
+               
+            </tr>
+    </table>
+
+    <center><h2>2102</h2></center>
+    <table>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                
+            </tr>
+        
+            <tr>
+                <th>1:40 - 2:30</th>
+                <td>Ingles</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+               
+            </tr>
+            <tr>
+                <th>2:30 - 3:20</th>
+                <td>Tutorias</td>
+                <td>Ingles</td>
+                <td>Ingles</td>
+                <td></td>
+                <td>Humanidades</td>
+                
+            </tr>
+            <tr>
+                <th>3:20 - 4:10</th>
+                <td>Humanidades</td>
+                <td>Lenguaje y comunicacion</td>
+                <td>ciencias sociales</td>
+                <td>Humanidades</td>
+                <td>Laboratorio de investigación</td>
+              
+            </tr>
+            <tr>
+                <th>4:10 - 4:30</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+            </tr>
+            <tr>
+                <th>4:30 - 5:20</th>
+                <td>Laboratorio de investigación</td>
+                <td>Pensamiento matematico</td>
+                <td>cultura Digital</td>
+                <td>la materia y sus interacciones</td>
+                <td>Lenguaje y comunicacion</td>
+                
+            </tr>
+            <tr>
+                <th>5:20 - 6:10</th>
+                <td>La materia y sus interacciones</td>
+                <td>Pensamiento matematico</td>
+                <td>Humanidades</td>
+                <td>Pensamiento matematico</td>
+                <td>Pensamiento matematico</td>
+                
+            </tr>
+            <tr>
+                <th>6:10 - 7:00</th>
+                <td>Cultura Digital</td>
+                <td>Ciencias Sociales</td>
+                <td>Laboratorio de investigacion</td>
+                <td>Lengua y comunicacion</td>
+                <td>la materia y sus interacciones</td>
+                
+            </tr>
+            <tr>
+                <th>7:00 - 7:50</th>
+                <td></td>
+                <td></td>
+                <td>Tutorias</td>
+                <td>Cultura Digital</td>
+                <td></td>
+               
+            </tr>
+        </tbody>
+    </table>
+    <center><h2>2103</h2></center>
+    <table>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                
+            </tr>
+        
+            <tr>
+                <th>1:40 - 2:30</th>
+                <td></td>
+                <td>Cultura Digital</td>
+                <td></td>
+                <td></td>
+                <td></td>
+               
+            </tr>
+            <tr>
+                <th>2:30 - 3:20</th>
+                <td>Ingles</td>
+                <td>Lengua y comunicacion</td>
+                <td>Lengua y comunicacion</td>
+                <td></td>
+                <td>Laboratoriode investigacion</td>
+                
+            </tr>
+            <tr>
+                <th>3:20 - 4:10</th>
+                <td>Pensamiento matematico</td>
+                <td>Pensamiento matematico</td>
+                <td>Cultura Digital</td>
+                <td>La materia y sus interacciones</td>
+                <td>Lengua y comunicacion</td>
+              
+            </tr>
+            <tr>
+                <th>4:10 - 4:30</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+            </tr>
+            <tr>
+                <th>4:30 - 5:20</th>
+                <td>Cultura Digital</td>
+                <td>Ciencias sociales</td>
+                <td>La materia y sus interacciones</td>
+                <td>Ciencias sociales</td>
+                <td>Ingles</td>
+                
+            </tr>
+            <tr>
+                <th>5:20 - 6:10</th>
+                <td>Tutorias</td>
+                <td>Laboratoriode investigacion</td>
+                <td>Laboratoriode investigacion</td>
+                <td>Ingles</td>
+                <td>Tutorias</td>
+                
+            </tr>
+            <tr>
+                <th>6:10 - 7:00</th>
+                <td>TICS</td>
+                <td>La materia y sus interacciones</td>
+                <td>La materia y sus interacciones </td>
+                <td>Humanidades</td>
+                <td>Pensamiento matematico</td>
+                
+            </tr>
+            <tr>
+                <th>7:00 - 7:50</th>
+                <td></td>
+                <td>Humanidades</td>
+                <td>Humanidades</td>
+                <td>Humanidades</td>
+                <td>Pensamiento matematico</td>
+               
+            </tr>
+        </tbody>
+    </table>
+    <center><h2>2104</h2></center>
+    <table>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                
+            </tr>
+        
+            <tr>
+                <th>1:40 - 2:30</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Cultura Digital</td>
+                <td></td>
+               
+            </tr>
+            <tr>
+                <th>2:30 - 3:20</th>
+                <td></td>
+                <td>Tutorias</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                
+            </tr>
+            <tr>
+                <th>3:20 - 4:10</th>
+                <td>Lengua y comunicacion</td>
+                <td>Laboratorio de investigacion</td>
+                <td>Laboratorio de investigacion</td>
+                <td>Pensamiento matematico</td>
+                <td>Ingles</td>
+              
+            </tr>
+            <tr>
+                <th>4:10 - 4:30</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+            </tr>
+            <tr>
+                <th>4:30 - 5:20</th>
+                <td>Pensamiento matematico</td>
+                <td>La materia y sus interacciones</td>
+                <td>Ingles</td>
+                <td>Ingles</td>
+                <td>Laboratorio de investigacion</td>
+                
+            </tr>
+            <tr>
+                <th>5:20 - 6:10</th>
+                <td>Cultura Digital</td>
+                <td>Ciencias sociales</td>
+                <td>Humanidades</td>
+                <td>Ciencias sociales</td>
+                <td>La materia y sus interacciones</td>
+                
+            </tr>
+            <tr>
+                <th>6:10 - 7:00</th>
+                <td>TICS</td>
+                <td>Humanidades</td>
+                <td>Lengua y comunicacion</td>
+                <td>Pensamiento matematico</td>
+                <td>Humanidades</td>
+                
+            </tr>
+            <tr>
+                <th>7:00 - 7:50</th>
+                <td>La materia y sus interacciones</td>
+                <td>Tutorias</td>
+                <td>Lengua y comunicacion</td>
+                <td>Pensamiento matematico</td>
+                <td>La materia y sus interacciones</td>
+               
+            </tr>
+        </tbody>
+    </table>
+    <center><h2>2105</h2></center>
+    <table>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                
+            </tr>
+        
+            <tr>
+                <th>1:40 - 2:30</th>
+                <td></td>
+                <td></td>
+                <td>Cultura Digital</td>
+                <td></td>
+                <td></td>
+               
+            </tr>
+            <tr>
+                <th>2:30 - 3:20</th>
+                <td>Humanidades</td>
+                <td></td>
+                <td>Tutorias</td>
+                <td></td>
+                <td>Ingles</td>
+                
+            </tr>
+            <tr>
+                <th>3:20 - 4:10</th>
+                <td>Ingles</td>
+                <td>Humanidades</td>
+                <td>Humanidades</td>
+                <td>Cultura Digital</td>
+                <td>Pensamiento matematico</td>
+              
+            </tr>
+            <tr>
+                <th>4:10 - 4:30</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+            </tr>
+            <tr>
+                <th>4:30 - 5:20</th>
+                <td>ciencias sociales</td>
+                <td>cultura Digital  </td>
+                <td>Pensamiento matematico</td>
+                <td>La materia y sus interacciones</td>
+                <td>Lengua y comunicacion</td>
+                
+            </tr>
+            <tr>
+                <th>5:20 - 6:10</th>
+                <td>T.S.M</td>
+                <td>Ciencias sociales</td>
+                <td>Laboratorio de investigacion</td>
+                <td>La materia y sus interacciones</td>
+                <td>Laboratorio de investigacion</td>
+                
+            </tr>
+            <tr>
+                <th>6:10 - 7:00</th>
+                <td>Pensamiento matematico</td>
+                <td>Ingles</td>
+                <td>Lengua y comunicacion </td>
+                <td></td>
+                <td>Humanidades</td>
+                
+            </tr>
+            <tr>
+                <th>7:00 - 7:50</th>
+                <td>La materia y sus interacciones</td>
+                <td>Pensamiento matematico</td>
+                <td>La materia y sus interacciones</td>
+                <td></td>
+                <td></td>
+               
+            </tr>
+        </tbody>
+    </table>
+    <center><h2>2106</h2></center>
+    <table>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                
+            </tr>
+        
+            <tr>
+                <th>1:40 - 2:30</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Pensamiento matematico</td>
+                <td>Pensamiento matematico</td>
+               
+            </tr>
+            <tr>
+                <th>2:30 - 3:20</th>
+                <td>Lengua y comunicacion</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Laboratorio de investigacion</td>
+                
+            </tr>
+            <tr>
+                <th>3:20 - 4:10</th>
+                <td>La materia y sus interacciones</td>
+                <td>Tutorias</td>
+                <td>La materia y sus interacciones</td>
+                <td>Ingles</td>
+                <td>Tutorias</td>
+              
+            </tr>
+            <tr>
+                <th>4:10 - 4:30</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+            </tr>
+            <tr>
+                <th>4:30 - 5:20</th>
+                <td>Ingles</td>
+                <td>Pensamiento matematico</td>
+                <td>Humanidades</td>
+                <td>La materia y sus interacciones</td>
+                <td>Ciencias sociales</td>
+                
+            </tr>
+            <tr>
+                <th>5:20 - 6:10</th>
+                <td>Humanidades</td>
+                <td>La materia y sus interacciones</td>
+                <td>Ciencias Sociales</td>
+                <td>Laboratorio de investigacion</td>
+                <td>Ingles</td>
+                
+            </tr>
+            <tr>
+                <th>6:10 - 7:00</th>
+                <td>Cultura Digital</td>
+                <td>Cultura Digital</td>
+                <td>Laboratorio de investigacion</td>
+                <td>Cultura Digital</td>
+                <td>Humanidades </td>
+                
+            </tr>
+            <tr>
+                <th>7:00 - 7:50</th>
+                <td>Pensamiento matematico</td>
+                <td></td>
+                <td>Lengua y comunicacion</td>
+                <td>Humanidades</td>
+                <td></td>
+               
+            </tr>
+        </tbody>
+    </table>
+    <center><h2>2107</h2></center>
+    <table>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                
+            </tr>
+        
+            <tr>
+                <th>1:40 - 2:30</th>
+                <td></td>
+                <td></td>
+                <td>Pensamiento matematico</td>
+                <td></td>
+                <td></td>
+               
+            </tr>
+            <tr>
+                <th>2:30 - 3:20</th>
+                <td></td>
+                <td></td>
+                <td>Pensamiento matematico</td>
+                <td></td>
+                <td></td>
+                
+            </tr>
+            <tr>
+                <th>3:20 - 4:10</th>
+                <td>Humanidades</td>
+                <td>Humanidades</td>
+                <td>Ingles</td>
+                <td>Laboratorio de investigacion</td>
+                <td>Humanidades</td>
+              
+            </tr>
+            <tr>
+                <th>4:10 - 4:30</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+            </tr>
+            <tr>
+                <th>4:30 - 5:20</th>
+                <td>Cultura Digital</td>
+                <td>Ingles</td>
+                <td>Ciencias sociales</td>
+                <td>Humanidades</td>
+                <td>Pensamiento matematico</td>
+                
+            </tr>
+            <tr>
+                <th>5:20 - 6:10</th>
+                <td>La materia y sus interacciones</td>
+                <td>Ingles</td>
+                <td>Cultura Digital</td>
+                <td>Pensamiento matematico</td>
+                <td>Lengua y comunicacion</td>
+                
+            </tr>
+            <tr>
+                <th>6:10 - 7:00</th>
+                <td>Tutorias</td>
+                <td>La materia y sus interacciones</td>
+                <td>Cultura Digital    </td>
+                <td>Lengua y comunicacion</td>
+                <td>La materia y sus interacciones</td>
+                
+            </tr>
+            <tr>
+                <th>7:00 - 7:50</th>
+                <td>Ciencias sociales</td>
+                <td>Tutorias</td>
+                <td>Laboratorio de investigacion</td>
+                <td>Lengua y comunicacion</td>
+                <td></td>
+               
+            </tr>
+        </tbody>
+    </table>
+    <center><h2>2108</h2></center>
+    <table>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                
+            </tr>
+        
+            <tr>
+                <th>1:40 - 2:30</th>
+                <td>Humanidades</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+               
+            </tr>
+            <tr>
+                <th>2:30 - 3:20</th>
+                <td>Laboratorio de investigacion</td>
+                <td>Ingles</td>
+                <td></td>
+                <td></td>
+                <td>Ingles</td>
+                
+            </tr>
+            <tr>
+                <th>3:20 - 4:10</th>
+                <td>Laboratorio de investigacion</td>
+                <td>La materia y sus interacciones</td>
+                <td></td>
+                <td>Cultura Digital</td>
+                <td>Tutorias</td>
+              
+            </tr>
+            <tr>
+                <th>4:10 - 4:30</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+            </tr>
+            <tr>
+                <th>4:30 - 5:20</th>
+                <td>La materia y sus interacciones</td>
+                <td>Laboratorio de investigacion</td>
+                <td>Pensamiento matematico</td>
+                <td>Humanidades</td>
+                <td>La materia y sus interacciones</td>
+                
+            </tr>
+            <tr>
+                <th>5:20 - 6:10</th>
+                <td>Cultura Digital</td>
+                <td>Humanidades</td>
+                <td>Humanidades</td>
+                <td>Ingles</td>
+                <td>La materia y sus interacciones</td>
+                
+            </tr>
+            <tr>
+                <th>6:10 - 7:00</th>
+                <td>Tutorias</td>
+                <td>Lengua y comunicacion</td>
+                <td>Tutorias</td>
+                <td>Pensamiento matematico</td>
+                <td>Ciencias sociales</td>
+                
+            </tr>
+            <tr>
+                <th>7:00 - 7:50</th>
+                <td>Lengua y comunicacion</td>
+                <td>Pensamiento matematico</td>
+                <td>Ciencias sociales</td>
+                <td>Pensamiento matematico</td>
+                <td></td>
+               
+            </tr>
+        </tbody>
+    </table>
+    <center><h2>2301</h2></center>
+    <table>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                
+            </tr>
+        
+            <tr>
+                <th>1:40 - 2:30</th>
+                <td>Fisica</td>
+                <td>Tecnologias de la informaciony comunicacion</td>
+                <td></td>
+                <td>Fisica</td>
+                <td>Fisica</td>
+               
+            </tr>
+            <tr>
+                <th>2:30 - 3:20</th>
+                <td>Tecnologias de la informaciony comunicacion</td>
+                <td>Tecnologias de la informaciony comunicacion</td>
+                <td>Tecnologias de la informaciony comunicacion</td>
+                <td>Fisica</td>
+                <td>Tutorias</td>
+                
+            </tr>
+            <tr>
+                <th>3:20 - 4:10</th>
+                <td>Tecnologias de la informaciony comunicacion</td>
+                <td>Tutorias</td>
+                <td>Fisica</td>
+                <td>Ingles</td>
+                <td>Ingles</td>
+              
+            </tr>
+            <tr>
+                <th>4:10 - 4:30</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+            </tr>
+            <tr>
+                <th>4:30 - 5:20</th>
+                <td>Matemáticas 3</td>
+                <td>Ingles 3</td>
+                <td>Literatura</td>
+                <td>Tecnologias de la informaciony comunicacion</td>
+                <td>Matemáticas 3</td>
+                
+            </tr>
+            <tr>
+                <th>5:20 - 6:10</th>
+                <td>Biología</td>
+                <td>Historia de mexico</td>
+                <td>Biología</td>
+                <td>Tecnologias de la informaciony comunicacion</td>
+                <td>Matemáticas 3</td>
+                
+            </tr>
+            <tr>
+                <th>6:10 - 7:00</th>
+                <td>Literatura</td>
+                <td>matematicas 3</td>
+                <td>Biología</td>
+                <td>biologia  </td>
+                <td>Historia de mexico</td>
+                
+            </tr>
+            <tr>
+                <th>7:00 - 7:50</th>
+                <td>Literatura</td>
+                <td>matematicas 3</td>
+                <td>Historia de mexico</td>
+                <td></td>
+                <td></td>
+               
+            </tr>
+        </tbody>
+    </table>
+    <center><h2>2302</h2></center>
+    <table>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                
+            </tr>
+        
+            <tr>
+                <th>1:40 - 2:30</th>
+                <td></td>
+                <td>Fisica</td>
+                <td>Literatura</td>
+                <td></td>
+                <td></td>
+               
+            </tr>
+            <tr>
+                <th>2:30 - 3:20</th>
+                <td>biologia</td>
+                <td>Fisica</td>
+                <td>Biología</td>
+                <td>Ingles 3</td>
+                <td>Fisica</td>
+                
+            </tr>
+            <tr>
+                <th>3:20 - 4:10</th>
+                <td>Fisica</td>
+                <td>Ingles 3</td>
+                <td>biologia</td>
+                <td>Fisica</td>
+                <td>Literatura</td>
+              
+            </tr>
+            <tr>
+                <th>4:10 - 4:30</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+            </tr>
+            <tr>
+                <th>4:30 - 5:20</th>
+                <td>Tutorias </td>
+                <td>matematicas 3</td>
+                <td>Ingles 3</td>
+                <td>matematicas 3</td>
+                <td>Tutorias</td>
+                
+            </tr>
+            <tr>
+                <th>5:20 - 6:10</th>
+                <td>matematicas 3 </td>
+                <td>Literatura</td>
+                <td>Historia de mexico</td>
+                <td>Administración</td>
+                <td>Historia de mexico</td>
+                
+            </tr>
+            <tr>
+                <th>6:10 - 7:00</th>
+                <td>Historia de mexico</td>
+                <td>Administración</td>
+                <td>matematicas 3</td>
+                <td>Administración</td>
+                <td>Administración</td>
+                
+            </tr>
+            <tr>
+                <th>7:00 - 7:50</th>
+                <td>Administración</td>
+                <td>Administración7</td>
+                <td>matematicas 3</td>
+                <td>biologia</td>
+                <td>Administración</td>
+               
+            </tr>
+        </tbody>
+    </table>
+    <center><h2>2303</h2></center>
+    <table>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                
+            </tr>
+        
+            <tr>
+                <th>1:40 - 2:30</th>
+                <td>Matemáticas 3</td>
+                <td></td>
+                <td>Fisica</td>
+                <td>Tutorias 3</td>
+                <td></td>
+               
+            </tr>
+            <tr>
+                <th>2:30 - 3:20</th>
+                <td>Fisica</td>
+                <td>Biología</td>
+                <td>Fisica</td>
+                <td>matematicas 3</td>
+                <td>Intervención en la Educación Obligatoria</td>
+                
+            </tr>
+            <tr>
+                <th>3:20 - 4:10</th>
+                <td>Tutorias</td>
+                <td>Fisica</td>
+                <td>Ingles 3</td>
+                <td>matematicas 3</td>
+                <td>Fisica</td>
+              
+            </tr>
+            <tr>
+                <th>4:10 - 4:30</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+            </tr>
+            <tr>
+                <th>4:30 - 5:20</th>
+                <td>biologia</td>
+                <td>Literatura</td>
+                <td>matematicas 3</td>
+                <td>Ingles 3</td>
+                <td>Biología</td>
+                
+            </tr>
+            <tr>
+                <th>5:20 - 6:10</th>
+                <td>Ingles 3</td>
+                <td>Historia de mexico</td>
+                <td>Matemáticas 3</td>
+                <td>Historia de mexico</td>
+                <td>Literatura</td>
+                
+            </tr>
+            <tr>
+                <th>6:10 - 7:00</th>
+                <td>Intervención en la Educación Obligatoria</td>
+                <td>Intervención en la Educación Obligatoria</td>
+                <td>Biología</td>
+                <td>Intervención en la Educación Obligatoria</td>
+                <td>Historia de mexico</td>
+                
+            </tr>
+            <tr>
+                <th>7:00 - 7:50</th>
+                <td>Intervención en la Educación Obligatoria</td>
+                <td>Intervención en la Educación Obligatoria</td>
+                <td>Literatura</td>
+                <td>Intervención en la Educación Obligatoria</td>
+                <td></td>
+               
+            </tr>
+        </tbody>
+    </table>
+    <center><h2>2304</h2></center>
+    <table>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                
+            </tr>
+        
+            <tr>
+                <th>1:40 - 2:30</th>
+                <td>Intervención en la Educación Obligatoria</td>
+                <td>Intervención en la Educación Obligatoria</td>
+                <td>Fisica</td>
+                <td></td>
+                <td>Intervención en la Educación Obligatoria</td>
+               
+            </tr>
+            <tr>
+                <th>2:30 - 3:20</th>
+                <td>Intervención en la Educación Obligatoria</td>
+                <td>Intervención en la Educación Obligatoria</td>
+                <td>Matemáticas 3</td>
+                <td>Biología</td>
+                <td>Historia de mexico</td>
+                
+            </tr>
+            <tr>
+                <th>3:20 - 4:10</th>
+                <td>Biología</td>
+                <td>Biología</td>
+                <td>Tutorias</td>
+                <td>Biología</td>
+                <td>matematicas 3</td>
+              
+            </tr>
+            <tr>
+                <th>4:10 - 4:30</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+            </tr>
+            <tr>
+                <th>4:30 - 5:20</th>
+                <td>Literatura</td>
+                <td>Historia de mexico</td>
+                <td>Intervención en la Educación Obligatoria</td>
+                <td>Historia de mexico</td>
+                <td>Fisica</td>
+                
+            </tr>
+            <tr>
+                <th>5:20 - 6:10</th>
+                <td>Matemáticas 3</td>
+                <td>matematicas 3</td>
+                <td>Intervención en la Educación Obligatoria</td>
+                <td>Tutorias</td>
+                <td>Fisica</td>
+                
+            </tr>
+            <tr>
+                <th>6:10 - 7:00</th>
+                <td>matematicas 3</td>
+                <td>Fisica</td>
+                <td>Literatura</td>
+                <td>Fisica</td>
+                <td>Literatura</td>
+                
+            </tr>
+            <tr>
+                <th>7:00 - 7:50</th>
+                <td></td>
+                <td>Ingles 3</td>
+                <td></td>
+                <td>Ingles 3 </td>
+                <td>Ingles 3</td>
+               
+            </tr>
+        </tbody>
+    </table>
+    <center><h2>2305</h2></center>
+    <table>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                
+            </tr>
+        
+            <tr>
+                <th>1:40 - 2:30</th>
+                <td>Tutorias</td>
+                <td>Biología</td>
+                <td>Historia de mexico</td>
+                <td>Biología</td>
+                <td>Biología</td>
+               
+            </tr>
+            <tr>
+                <th>2:30 - 3:20</th>
+                <td>Administración</td>
+                <td>Biología</td>
+                <td>Ingles 3</td>
+                <td>Historia de mexico</td>
+                <td>Administración</td>
+                
+            </tr>
+            <tr>
+                <th>3:20 - 4:10</th>
+                <td>Administracion </td>
+                <td>Fisica</td>
+                <td>Tutorias</td>
+                <td>Fisica</td>
+                <td>Administracion</td>
+              
+            </tr>
+            <tr>
+                <th>4:10 - 4:30</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+            </tr>
+            <tr>
+                <th>4:30 - 5:20</th>
+                <td>Matemáticas 3</td>
+                <td>Fisica</td>
+                <td>matematicas 3</td>
+                <td>matematicas 3</td>
+                <td>matematicas 3</td>
+                
+            </tr>
+            <tr>
+                <th>5:20 - 6:10</th>
+                <td>Literatura</td>
+                <td>Administracion</td>
+                <td>Fisica</td>
+                <td>matematicas 3</td>
+                <td>Ingles</td>
+                
+            </tr>
+            <tr>
+                <th>6:10 - 7:00</th>
+                <td></td>
+                <td>Ingles</td>
+                <td>Administracion</td>
+                <td>Literatura</td>
+                <td>Fisica</td>
+                
+            </tr>
+            <tr>
+                <th>7:00 - 7:50</th>
+                <td></td>
+                <td></td>
+                <td>Administracion</td>
+                <td>Literatura</td>
+                <td>Historia de mexico</td>
+               
+            </tr>
+        </tbody>
+    </table>
+    <center><h2>2306</h2></center>
+    <table>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                
+            </tr>
+        
+            <tr>
+                <th>1:40 - 2:30</th>
+                <td>Biología</td>
+                <td>Tutorias</td>
+                <td>matematicas 3</td>
+                <td></td>
+                <td>Tutorias</td>
+               
+            </tr>
+            <tr>
+                <th>2:30 - 3:20</th>
+                <td>Biología</td>
+                <td>Literatura</td>
+                <td>Literatura</td>
+                <td>Literatura</td>
+                <td>Biología</td>
+                
+            </tr>
+            <tr>
+                <th>3:20 - 4:10</th>
+                <td>matematicas 3</td>
+                <td>Historia de mexico</td>
+                <td>Historia de mexico</td>
+                <td>Historia de mexico</td>
+                <td>Biología</td>
+              
+            </tr>
+            <tr>
+                <th>4:10 - 4:30</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+            </tr>
+            <tr>
+                <th>4:30 - 5:20</th>
+                <td>Fisica</td>
+                <td>Higiene y salud comunitaria</td>
+                <td>Fisica</td>
+                <td>Fisica</td>
+                <td>matematicas 3</td>
+                
+            </tr>
+            <tr>
+                <th>5:20 - 6:10</th>
+                <td>Fisica</td>
+                <td>Higiene y salud comunitaria</td>
+                <td>Ingles 3</td>
+                <td>Higiene y salud comunitaria</td>
+                <td>Matemáticas 3</td>
+                
+            </tr>
+            <tr>
+                <th>6:10 - 7:00</th>
+                <td>Higiene y salud comunitaria</td>
+                <td>matematicas 3</td>
+                <td>Higiene y salud comunitaria</td>
+                <td>Ingles 3</td>
+                <td>Ingles 3</td>
+                
+            </tr>
+            <tr>
+                <th>7:00 - 7:50</th>
+                <td>Higiene y salud comunitaria</td>
+                <td></td>
+                <td>Higiene y salud comunitaria</td>
+                <td></td>
+                <td>Fisica</td>
+               
+            </tr>
+        </tbody>
+    </table>
+    <center><h2>2307</h2></center>
+    <table>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                
+            </tr>
+        
+            <tr>
+                <th>1:40 - 2:30</th>
+                <td>Tutorias</td>
+                <td>Literatura</td>
+                <td>Tutorias</td>
+                <td>matematicas 3</td>
+                <td></td>
+               
+            </tr>
+            <tr>
+                <th>2:30 - 3:20</th>
+                <td>Literatura</td>
+                <td>Historia de mexico 1</td>
+                <td>Fisica</td>
+                <td>Matemáticas 3</td>
+                <td>Fisica</td>
+                
+            </tr>
+            <tr>
+                <th>3:20 - 4:10</th>
+                <td>Fisica</td>
+                <td>Historia de mexico</td>
+                <td>matematicas 3</td>
+                <td>Higiene y salud comunitaria</td>
+                <td>Fisica</td>
+              
+            </tr>
+            <tr>
+                <th>4:10 - 4:30</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+            </tr>
+            <tr>
+                <th>4:30 - 5:20</th>
+                <td>Higiene y salud comunitaria</td>
+                <td>matematicas 3</td>
+                <td>Higiene y salud comunitaria</td>
+                <td>Literatura</td>
+                <td>Higiene y salud comunitaria</td>
+                
+            </tr>
+            <tr>
+                <th>5:20 - 6:10</th>
+                <td>Higiene y salud comunitaria</td>
+                <td>matematicas 3</td>
+                <td>Higiene y salud comunitaria</td>
+                <td>Fisica</td>
+                <td>Higiene y salud comunitaria</td>
+                
+            </tr>
+            <tr>
+                <th>6:10 - 7:00</th>
+                <td>Ingles 3</td>
+                <td>biologia</td>
+                <td>Ingles 3</td>
+                <td>Biología</td>
+                <td></td>
+                
+            </tr>
+            <tr>
+                <th>7:00 - 7:50</th>
+                <td>Biología</td>
+                <td>Biología</td>
+                <td>Ingles</td>
+                <td>Historia de mexico</td>
+                <td></td>
+               
+            </tr>
+        </tbody>
+    </table>
+    <center><h2>2501</h2></center>
+    <table>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                
+            </tr>
+        
+            <tr>
+                <th>1:40 - 2:30</th>
+                <td>matematicas 5</td>
+                <td>Matemáticas 5</td>
+                <td>Historia Universal Contemporánea</td>
+                <td>Historia Universal Contemporánea</td>
+                <td></td>
+               
+            </tr>
+            <tr>
+                <th>2:30 - 3:20</th>
+                <td>Tecnologias de la informacion 3</td>
+                <td>Tecnologias de la informacion 3</td>
+                <td>Geografia</td>
+                <td>Matemáticas 5</td>
+                <td>Geografia</td>
+                
+            </tr>
+            <tr>
+                <th>3:20 - 4:10</th>
+                <td>Tecnologias de la informacion 3</td>
+                <td>Tecnologias de la informacion 3</td>
+                <td>T.S.F</td>
+                <td>T.S.M</td>
+                <td>Historia Universal Contemporánea</td>
+              
+            </tr>
+            <tr>
+                <th>4:10 - 4:30</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+            </tr>
+            <tr>
+                <th>4:30 - 5:20</th>
+                <td>Etimologías</td>
+                <td>T.S.F</td>
+                <td>Calculo diferencial</td>
+                <td>Etimologías</td>
+                <td>T.S.M</td>
+                
+            </tr>
+            <tr>
+                <th>5:20 - 6:10</th>
+                <td>T.S.F</td>
+                <td>Calculo diferencial</td>
+                <td>Etimologías</td>
+                <td>Calculo diferencial</td>
+                <td>T.S.M</td>
+                
+            </tr>
+            <tr>
+                <th>6:10 - 7:00</th>
+                <td>Geografia</td>
+                <td>Tutorias 5</td>
+                <td>Tecnologias de la informacion 3</td>
+                <td>Tecnologias de la informacion 3</td>
+                <td>Tutorias 5</td>
+                
+            </tr>
+            <tr>
+                <th>7:00 - 7:50</th>
+                <td></td>
+                <td></td>
+                <td>Tecnologias de la informacion 3</td>
+                <td></td>
+                <td></td>
+               
+            </tr>
+        </tbody>
+    </table>
+    <center><h2>2502</h2></center>
+    <table>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                
+            </tr>
+        
+            <tr>
+                <th>1:40 - 2:30</th>
+                <td></td>
+                <td>Administracion 3</td>
+                <td>Administracion 3</td>
+                <td>Administracion 3</td>
+                <td>Administracion 3</td>
+               
+            </tr>
+            <tr>
+                <th>2:30 - 3:20</th>
+                <td></td>
+                <td>Administracion 3</td>
+                <td>Administracion 3</td>
+                <td>Tutorias 5</td>
+                <td>Administracion 3</td>
+                
+            </tr>
+            <tr>
+                <th>3:20 - 4:10</th>
+                <td>matematicas 5</td>
+                <td>matematicas 5</td>
+                <td>Geografia</td>
+                <td>matematicas financieras</td>
+                <td>matematicas 5</td>
+              
+            </tr>
+            <tr>
+                <th>4:10 - 4:30</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+            </tr>
+            <tr>
+                <th>4:30 - 5:20</th>
+                <td>Administracion 3</td>
+                <td>Contabilidad</td>
+                <td>Etimologías</td>
+                <td>Contabilidad</td>
+                <td>Administracion </td>
+                
+            </tr>
+            <tr>
+                <th>5:20 - 6:10</th>
+                <td>Etimologías</td>
+                <td>Matemáticas financieras</td>
+                <td>matematicas financieras</td>
+                <td>Etimologías</td>
+                <td>Administracion </td>
+                
+            </tr>
+            <tr>
+                <th>6:10 - 7:00</th>
+                <td>Tutorias 5</td>
+                <td>  </td>
+                <td>Historia universal Contemporánea</td>
+                <td>Historia universal Contemporánea</td>
+                <td>Geografia</td>
+                
+            </tr>
+            <tr>
+                <th>7:00 - 7:50</th>
+                <td>Historia universal Contemporánea</td>
+                <td></td>
+                <td></td>
+                <td>Geografia</td>
+                <td>Geografia</td>
+               
+            </tr>
+        </tbody>
+    </table>
+    <center><h2>2503</h2></center>
+    <table>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                
+            </tr>
+        
+            <tr>
+                <th>1:40 - 2:30</th>
+                <td></td>
+                <td>Historia universal Contemporánea</td>
+                <td>Tutorias 5</td>
+                <td>matematicas 5</td>
+                <td></td>
+               
+            </tr>
+            <tr>
+                <th>2:30 - 3:20</th>
+                <td>matematicas 5</td>
+                <td>Geografia</td>
+                <td>Historia universal Contemporánea</td>
+                <td>Geografia</td>
+                <td></td>
+                
+            </tr>
+            <tr>
+                <th>3:20 - 4:10</th>
+                <td>Geografia</td>
+                <td>Tutorias 5 </td>
+                <td>Etimologías</td>
+                <td>Administracion 1</td>
+                <td></td>
+              
+            </tr>
+            <tr>
+                <th>4:10 - 4:30</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+            </tr>
+            <tr>
+                <th>4:30 - 5:20</th>
+                <td>Psicología</td>
+                <td>Derecho</td>
+                <td>Etimologías</td>
+                <td>Derecho</td>
+                <td>Psicología</td>
+                
+            </tr>
+            <tr>
+                <th>5:20 - 6:10</th>
+                <td>Administracion</td>
+                <td>Psicología</td>
+                <td>Administracion</td>
+                <td>Etimologías</td>
+                <td>Derecho</td>
+                
+            </tr>
+            <tr>
+                <th>6:10 - 7:00</th>
+                <td>Intervención a la Educación Obligatoria 3</td>
+                <td>Intervención a la Educación Obligatoria 3</td>
+                <td>matematicas 5</td>
+                <td>Intervención a la Educación Obligatoria 3</td>
+                <td>Historia universal Contemporánea</td>
+                
+            </tr>
+            <tr>
+                <th>7:00 - 7:50</th>
+                <td>Intervención a la Educación Obligatoria 3</td>
+                <td>Intervención a la Educación Obligatoria 3</td>
+                <td></td>
+                <td>Intervención a la Educación Obligatoria 3</td>
+                <td>Intervención a la Educación Obligatoria 3</td>
+               
+            </tr>
+        </tbody>
+    </table>
+    
+    <center><h2>2504</h2></center>
+    <table>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                
+            </tr>
+        
+            <tr>
+                <th>1:40 - 2:30</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Matemáticas 5</td>
+               
+            </tr>
+            <tr>
+                <th>2:30 - 3:20</th>
+                <td>Tutorias 5</td>
+                <td>matematicas 5</td>
+                <td>Intervención a la Educación Obligatoria 3</td>
+                <td></td>
+                <td>matematicas 5</td>
+                
+            </tr>
+            <tr>
+                <th>3:20 - 4:10</th>
+                <td>Psicología</td>
+                <td>Psicología 2</td>
+                <td>Tutorias</td>
+                <td>Derecho</td>
+                <td>Psicología</td>
+              
+            </tr>
+            <tr>
+                <th>4:10 - 4:30</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+            </tr>
+            <tr>
+                <th>4:30 - 5:20</th>
+                <td>Intervención a la Educación Obligatoria 3</td>
+                <td>Etimologías</td>
+                <td>Intervención a la Educación Obligatoria 3</td>
+                <td>Intervención a la Educación Obligatoria 3</td>
+                
+            </tr>
+            <tr>
+                <th>5:20 - 6:10</th>
+                <td>Intervención a la Educación Obligatoria 3</td>
+                <td>Geografia</td>
+                <td>historia universal Contemporánea</td>
+                <td>Intervención a la Educación Obligatoria 3</td>
+                <td>Intervención a la Educación Obligatoria 3</td>
+                
+            </tr>
+            <tr>
+                <th>6:10 - 7:00</th>
+                <td>historia universal Contemporánea</td>
+                <td>Derecho</td>
+                <td>Geografia</td>
+                <td>Geografia</td>
+                <td>Etimologías</td>
+                
+            </tr>
+            <tr>
+                <th>7:00 - 7:50</th>
+                <td>Administracion}</td>
+                <td>Derecho</td>
+                <td>Etimologías</td>
+                <td>Administracion</td>
+                <td>Administracion</td>
+               
+            </tr>
+        </tbody>
+    </table>
+    <center><h2>2505</h2></center>
+    <table>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                
+            </tr>
+        
+            <tr>
+                <th>1:40 - 2:30</th>
+                <td></td>
+                <td></td>
+                <td>T.S.F</td>
+                <td>Geografia</td>
+                <td></td>
+               
+            </tr>
+            <tr>
+                <th>2:30 - 3:20</th>
+                <td></td>
+                <td>T.S.M</td>
+                <td>Etimologías</td>
+                <td>T.S.M</td>
+                <td></td>
+                
+            </tr>
+            <tr>
+                <th>3:20 - 4:10</th>
+                <td>Etimologías</td>
+                <td>T.S.M</td>
+                <td>matematicas 5</td>
+                <td>T.S.F</td>
+                <td>T.S.F</td>
+              
+            </tr>
+            <tr>
+                <th>4:10 - 4:30</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+            </tr>
+            <tr>
+                <th>4:30 - 5:20</th>
+                <td>Historia universal Contemporánea</td>
+                <td>Tecnologias de la informacion 3</td>
+                <td>Geografia</td>
+                <td>matematicas 5</td>
+                <td>Geografia</td>
+                
+            </tr>
+            <tr>
+                <th>5:20 - 6:10</th>
+                <td>Tutorias</td>
+                <td>Tecnologias de la informacion 3</td>
+                <td>calculo diferencial</td>
+                <td>historia universal Contemporánea</td>
+                <td>Tecnologias de la informacion 3</td>
+                
+            </tr>
+            <tr>
+                <th>6:10 - 7:00</th>
+                <td>calculo diferencial</td>
+                <td>matematicas 5</td>
+                <td>Tecnologias de la informacion 3</td>
+                <td>calculo diferencial</td>
+                <td>Tecnologias de la informacion 3</td>
+                
+            </tr>
+            <tr>
+                <th>7:00 - 7:50</th>
+                <td>Tecnologias de la informacion 3</td>
+                <td>Tutorias 5</td>
+                <td>Tecnologias de la informacion 3</td>
+                <td>Etimologías</td>
+                <td>historia universal Contemporánea</td>
+               
+            </tr>
+        </tbody>
+    </table>
+    <center><h2>2506</h2></center>
+    <table>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                
+            </tr>
+        
+            <tr>
+                <th>1:40 - 2:30</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Matemáticas 5</td>
+                <td></td>
+               
+            </tr>
+            <tr>
+                <th>2:30 - 3:20</th>
+                <td>Geografia</td>
+                <td>Tutorias 5</td>
+                <td>Tutorias 5</td>
+                <td>matematicas 5</td>
+                <td>matematicas 5</td>
+                
+            </tr>
+            <tr>
+                <th>3:20 - 4:10</th>
+                <td>historia universal Contemporánea</td>
+                <td>historia universal Contemporánea</td>
+                <td>temas selectos de quimica</td>
+                <td>ciencia salud 1</td>
+                <td>Geografia</td>
+              
+            </tr>
+            <tr>
+                <th>4:10 - 4:30</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+            </tr>
+            <tr>
+                <th>4:30 - 5:20</th>
+                <td>Etimologías</td>
+                <td>ciencia salud 1</td>
+                <td>Anatomía y fisiología</td>
+                <td>temas selectos de quimica</td>
+                <td>Etimologías</td>
+                
+            </tr>
+            <tr>
+                <th>5:20 - 6:10</th>
+                <td>ciencia salud 1</td>
+                <td>Temas selectos de quimica</td>
+                <td>Etimologías</td>
+                <td>Anatomía y fisiología</td>
+                <td>Anatomía y fisiología/td>
+                
+            </tr>
+            <tr>
+                <th>6:10 - 7:00</th>
+                <td>Higiene y salud comunitaria 3</td>
+                <td>Geografia</td>
+                <td>Higiene y salud comunitaria 3</td>
+                <td>Higiene y salud comunitaria 3</td>
+                <td>Historia universal Contemporánea</td>
+                
+            </tr>
+            <tr>
+                <th>7:00 - 7:50</th>
+                <td>Higiene y salud comunitaria 3</td>
+                <td>Higiene y salud comunitaria 3</td>
+                <td>Higiene y salud comunitaria 3</td>
+                <td>Higiene y salud comunitaria 3</td>
+                <td></td>
+               
+            </tr>
+        </tbody>
+    </table>
+    <center><h2>2507</h2></center>
+    <table>
+        <thead>
+            <tr>
+                <th>Hora</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                
+            </tr>
+        
+            <tr>
+                <th>1:40 - 2:30</th>
+                <td></td>
+                <td>Matemáticas 5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+               
+            </tr>
+            <tr>
+                <th>2:30 - 3:20</th>
+                <td>Etimologías</td>
+                <td>matematicas 5</td>
+                <td></td>
+                <td>Anatomía y fisiología</td>
+                <td>matematicas 5</td>
+                
+            </tr>
+            <tr>
+                <th>3:20 - 4:10</th>
+                <td>Tutorias 5</td>
+                <td>ciencias de la salud</td>
+                <td>higiene salud comunitaria</td>
+                <td>Etimologías</td>
+                <td>Tutorias</td>
+              
+            </tr>
+            <tr>
+                <th>4:10 - 4:30</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+                <th>descanso</th>
+            </tr>
+            <tr>
+                <th>4:30 - 5:20</th>
+                <td>Geografia</td>
+                <td>Anatomía y fisiología</td>
+                <td>Temas selectos de quimica</td>
+                <td>Geografia</td>
+                <td>Historia universal Contemporánea</td>
+                
+            </tr>
+            <tr>
+                <th>5:20 - 6:10</th>
+                <td>Historia universal Contemporánea</td>
+                <td>Historia universal Contemporánea</td>
+                <td>Temas selectos de quimica</td>
+                <td>Temas selectos de quimica</td>
+                <td>Ciencias de la salud</td>
+                
+            </tr>
+            <tr>
+                <th>6:10 - 7:00</th>
+                <td>Anatomía y fisiología</td>
+                <td>Higiene y salud comunitaria 3</td>
+                <td>Etimologías</td>
+                <td>Higiene y salud comunitaria 3</td>
+                <td>Higiene y salud comunitaria 3</td>
+                
+            </tr>
+            <tr>
+                <th>7:00 - 7:50</th>
+                <td>Ciencias de la salud</td>
+                <td>Higiene y salud comunitaria 3</td>
+                <td>Geografia</td>
+                <td>Higiene y salud comunitaria 3</td>
+                <td></td>
+               
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
